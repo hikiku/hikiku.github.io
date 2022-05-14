@@ -5,8 +5,11 @@ permalink: /products/
 ---
 
 {% assign hikiku_system    = site.data.products["hikiku_system"] %}
+
 {% assign hikiku_board     = site.data.products["hikiku_board"] %}
+
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
+
 {% assign hikiku_server   = site.data.products["hikiku_server"] %}
 
 ## {{ hikiku_board.fullname }}

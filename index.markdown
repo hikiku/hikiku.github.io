@@ -6,8 +6,11 @@ layout: home
 ---
 
 {% assign hikiku_system    = site.data.products["hikiku_system"] %}
+
 {% assign hikiku_board     = site.data.products["hikiku_board"] %}
+
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
+
 {% assign hikikuc_server   = site.data.products["hikiku_server"] %}
 
 
