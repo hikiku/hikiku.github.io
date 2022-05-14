@@ -1,0 +1,15 @@
+hikiku_system:
+  fullname: HiKiku
+  shorname: HiKiku
+
+hikiku_board:
+  fullname: HiKiku Board
+  shortname: Board
+
+hikiku_app:
+  fullname: HiKiku App
+  shortname: App
+
+hikiku_server:
+  fullname: HiKiku Server
+  shortname: Server
