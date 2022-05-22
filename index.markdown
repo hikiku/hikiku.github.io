@@ -7,20 +7,29 @@ layout: home
 
 {% assign hikiku_system    = site.data.products["hikiku_system"] %}
 
+{% assign hikiku_widget    = site.data.products["hikiku_widget"] %}
+
 {% assign hikiku_board     = site.data.products["hikiku_board"] %}
+
+{% assign hikiku_http_sink   = site.data.products["hikiku_http_sink"] %}
 
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
 
-{% assign hikikuc_server   = site.data.products["hikiku_server"] %}
 
+{{ hikiku_system.fullname }} 是一个创新开放的互联网音频播放系统。
 
-{{ hikiku_system.fullname }} 是一个网络音频播放系统。它可应用于小微空间的背景音乐播放等。
+{{ hikiku_system.fullname }} 整个系统包括硬件设备 {{ hikiku_widget.fullname }} 、管理平台 {{ hikiku_board.fullname }}、 用户应用 {{ hikiku_app.fullname }} 等。
 
+{{ hikiku_widget.fullname }} 简单易用，可以播放来自于互联网的音频，也可播放本地 Micro SD 卡的音乐文件。{{ hikiku_widget.fullname }} 可以通过本地喇叭直接输出音乐，也可通过 Line Out, BT 等连接已有的音频播放设备。
 
-{{ hikiku_system.fullname }} 由 {{ hikiku_board.fullname }}, {{hikiku_app.fullname}} 与 {{ hikikuc_server.fullname }} 三部分组成。详细了解-->
+可以使用 {{ hikiku_board.fullname }} 管理整个系统。
 
-{{ hikiku_board.fullname }} 简单易用。
+可以使用 {{ hikiku_app.fullname }} 个性化调节应用。
 
-{{ hikiku_system.fullname }} 简单易用，容易扩展。我们专注于开发 {{ hikiku_board.fullname }}。{{ hikiku_board.fullname }} 与 {{hikiku_app.fullname}} 、{{ hikikuc_server.fullname }} 之间的通信协议极为简洁。我们提供 {{hikiku_app.fullname}} 的开源实现， 同时提供 {{ hikikuc_server.fullname }} 的最佳实践，以方便第三方扩展与集成。
+{{ hikiku_system.fullname }} 可应用于网络背景音乐播放、网络广播、本地音乐桥接等。
 
-订阅我们的 RSS 频道，及时了解我们的进展。
+我们专注于提升系统的开放能力。{{ hikiku_system.fullname }} 通信协议开放，简洁且易于扩展。
+
+我们专注于 {{ hikiku_widget.fullname }} 的开发，同时提供 {{hikiku_board.fullname}} 、{{hikiku_app.fullname}} 的开源实现， 与 {{ hikiku_http_sink.fullname }} 的最佳实践，以方便第三方扩展与集成。
+
+请订阅我们的 RSS 频道，及时了解我们的进展。
