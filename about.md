@@ -1,9 +1,23 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: article
+titles:
+  en      : &EN       About
+  en-GB   : *EN
+  en-US   : *EN
+  en-CA   : *EN
+  en-AU   : *EN
+  zh-Hans : &ZH_HANS  关于
+  zh      : *ZH_HANS
+  zh-CN   : *ZH_HANS
+  zh-SG   : *ZH_HANS
+  zh-Hant : &ZH_HANT  關於
+  zh-TW   : *ZH_HANT
+  zh-HK   : *ZH_HANT
+  ko      : &KO       소개
+  ko-KR   : *KO
+key: page-about
 ---
+
 
 {% assign hikiku_system    = site.data.products["hikiku_system"] %}
 
@@ -33,3 +47,10 @@ layout: home
 我们专注于 {{ hikiku_widget.fullname }} 的开发，同时提供 {{hikiku_board.fullname}} 、{{hikiku_app.fullname}} 的开源实现， 与 {{ hikiku_http_sink.fullname }} 的最佳实践，以方便第三方扩展与集成。
 
 请订阅我们的 RSS 频道，及时了解我们的进展。
+
+
+Just say something about yourself. :+1:
+
+{% highlight javascript %}
+(() => console.log('hello, world!'))();
+{% endhighlight %}

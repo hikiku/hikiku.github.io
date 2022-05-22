@@ -1,8 +1,30 @@
 ---
-layout: page
-title: Products
-permalink: /products/
+layout: article
+titles:
+    en      : &EN       Products
+    en-GB   : *EN
+    en-US   : *EN
+    en-CA   : *EN
+    en-AU   : *EN
+    zh-Hans : &ZH_HANS  产品
+    zh      : *ZH_HANS
+    zh-CN   : *ZH_HANS
+    zh-SG   : *ZH_HANS
+    zh-Hant : &ZH_HANT  產品
+    zh-TW   : *ZH_HANT
+    zh-HK   : *ZH_HANT
+    ko      : &KO       제품
+    ko-KR   : *KO
+    fr      : &FR       Produit
+    fr-BE   : *FR
+    fr-CA   : *FR
+    fr-CH   : *FR
+    fr-FR   : *FR
+    fr-LU   : *FR
+    tr      : &TR       Ürün
+key: page-products
 ---
+
 
 {% assign hikiku_system    = site.data.products["hikiku_system"] %}
 
