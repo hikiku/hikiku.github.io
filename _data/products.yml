@@ -1,19 +1,19 @@
 hikiku_system:
-  fullname: HiKiku
-  shorname: HiKiku
+  fullname: Hikiku
+  shorname: Hikiku
 
 hikiku_widget:
-  fullname: HiKiku Widget
+  fullname: Hikiku Widget
   shortname: Widget
 
 hikiku_board:
-  fullname: HiKiku Board
+  fullname: Hikiku Board
   shortname: Board
 
 hikiku_http_sink:
-  fullname: HiKiku HTTP Sink
+  fullname: Hikiku HTTP Sink
   shortname: HTTP Sink
 
 hikiku_app:
-  fullname: HiKiku App
+  fullname: Hikiku App
   shortname: App

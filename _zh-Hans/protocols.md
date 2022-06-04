@@ -22,9 +22,12 @@ titles:
     fr-FR   : *FR
     fr-LU   : *FR
     tr      : &TR       protokoller
-key: page-protocols
+lang: zh-Hans  #en, zh-Hans, zh-Hant
+key: page-zh-Hans-protocols
+permalink: /zh-Hans/protocols.html
 ---
 
+- /protocols.md
 
 - Wi-Fi 配对， 设置 Server URL, Token 
 

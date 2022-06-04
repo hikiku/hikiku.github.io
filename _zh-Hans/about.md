@@ -15,7 +15,10 @@ titles:
   zh-HK   : *ZH_HANT
   ko      : &KO       소개
   ko-KR   : *KO
-key: page-about
+lang: en  #en, zh-Hans, zh-Hant
+key: page-zh-Hans-about
+permalink: /zh-Hans/about.html
+show_title: false #true, false
 ---
 
 

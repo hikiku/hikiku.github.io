@@ -10,8 +10,8 @@
 
 
 ## !USE TEXT THEME
-# theme: jekyll-text-theme # Gem-based Jekyll Themes
-remote_theme: kitian616/jekyll-TeXt-theme # Jekyll Remote Theme, see https://github.com/benbalter/jekyll-remote-theme for more information.
+theme: jekyll-text-theme # Gem-based Jekyll Themes
+# remote_theme: kitian616/jekyll-TeXt-theme # Jekyll Remote Theme, see https://github.com/benbalter/jekyll-remote-theme for more information.
 #
 # ,--------.      ,--.   ,--. ,--.
 # '--.  .--',---.  \  `.'  /,-'  '-.
@@ -22,27 +22,27 @@ remote_theme: kitian616/jekyll-TeXt-theme # Jekyll Remote Theme, see https://git
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://hikiku.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title: HiKiku
+title: "Hikiku"
 description: > # this means to ignore newlines until "Language & timezone"
-  开放创新的联网音频播放装置
+  An open and innovative networked audio playback device! 开放创新的联网音频播放装置，及其相关应用与解决方案。
 
 
 ## => Language and Timezone
 ##############################
-lang: zh-CN # the language of your site, default as "en"
+lang: en # the language of your site, default as "en". zh-Hans, zh-Hant.
 timezone: Asia/Hong_Kong # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
 ##############################
 author:
-  type      : person # "person" (default), "organization"
-  name      : 梁柱子
-  url       :
+  type      : organization # "person" (default), "organization"
+  name      : Hikiku
+  url       : https://www.hikiku.io
   avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person.
+  bio       : I am an amazing organization.
   email     : liangzhuzi2020@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -205,6 +205,18 @@ exclude:
   - /test
   - /vendor
 
+#collections_dir: docs
+collections:
+  en:
+    output: true
+  zh-Hans:
+    output: true
+  zh-Hant:
+    output: true
+
+#  docs:
+#    output: true
+
 defaults:
   - scope:
       path: ""
@@ -228,3 +240,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-seo-tag
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

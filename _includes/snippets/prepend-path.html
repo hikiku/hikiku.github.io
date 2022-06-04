@@ -1,0 +1,3 @@
+{%- include snippets/get-lang.html -%}
+{%- assign _lang = __return -%}
+{%- assign __return = include.path | prepend: '/' | prepend: include.prepend_path | replace:'///','/' | replace:'//','/' | replace:"{lang}",_lang -%}

@@ -22,7 +22,9 @@ titles:
     fr-FR   : *FR
     fr-LU   : *FR
     tr      : &TR       Ürün
-key: page-products
+lang: en  #en, zh-Hans, zh-Hant
+key: page-en-products
+permalink: /en/products.html
 ---
 
 
