@@ -1,4 +1,4 @@
-headerfirst:
+headerbrand:
   titles:
       # @start locale config
       en      : &EN       Hikiku
@@ -26,6 +26,32 @@ headerfirst:
   url: /{lang}/
 
 header:
+  - titles:
+      # @start locale config
+      en      : &EN       Home
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  首页
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  首頁
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       집
+      ko-KR   : *KO
+      fr      : &FR       Maison
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       Ev
+      # @end locale config
+    url: /{lang}/
+
   - titles:
       # @start locale config
       en      : &EN       Applications
@@ -156,7 +182,7 @@ header:
       # @end locale config
     url: /{lang}/about.html
 
-headerlast:
+headerlang:
   - titles:
       # @start locale config
       en      : &EN       EN
@@ -182,6 +208,7 @@ headerlast:
       tr      : &TR       EN
       # @end locale config
     url: /en/index.html
+    lang: en
 
   - titles:
       # @start locale config
@@ -208,8 +235,9 @@ headerlast:
       tr      : &TR       简
       # @end locale config
     url: /zh-Hans/index.html
+    lang: zh-Hans
 
-headerundo:
+headerlangundo:
   - titles:
       # @start locale config
       en      : &EN       繁
@@ -235,3 +263,4 @@ headerundo:
       tr      : &TR       繁
       # @end locale config
     url: /zh-Hant/index.html
+    lang: zh-Hant
