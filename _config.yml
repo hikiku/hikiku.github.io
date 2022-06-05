@@ -18,6 +18,10 @@ remote_theme: kitian616/jekyll-TeXt-theme # Jekyll Remote Theme, see https://git
 #    |  |  | .-. :  .'    \ '-.  .-'
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
+
+
+
+
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
@@ -204,6 +208,7 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  - index.html_bak
 
 #collections_dir: docs
 collections:

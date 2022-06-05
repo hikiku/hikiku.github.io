@@ -1,12 +1,100 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-# articles:
-#   excerpt_type: html
+layout: landing
+header: true
 lang: en  #en, zh-Hans, zh-Hant
+
+title: Hikiku
+excerpt: >
+  An innovative and open Internet audio playback device.
 permalink: /en/
 redirect_from:
   - /index.html
+
+article_header:
+  actions:
+    - text: Getting Started
+      type: error
+      url: /applications
+  height: 80vh
+  theme: dark
+  background_color: "#367a9a"
+  background_image:
+    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
+#    src: /docs/assets/images/cover4.jpg
+
+data:
+  sections:
+    - title: Play music from sources
+      children:
+        - title: MicroSD card
+          excerpt: Supports MP3, OPUS, OGG, FLAC, AAC, M4A, TS, MP4, AMRNB and AMRWB audio formats.
+#          actions:
+#            - text: Learn More
+#              url: /docs/en/additional-styles
+        - title: HTTP file & HLS
+          excerpt: A HTTP file, a HTTP Live Streaming from HTTP Server.
+#         actions:
+#            - text: Learn More
+#              url: /docs/en/extensions
+        - title: Line-in
+          excerpt: It allows users to connect an external audio device, CD players, musical instruments, etc. 
+#         actions:
+#            - text: Learn More
+#              url: /docs/en/extensions
+        - title: BT
+          excerpt: The Classic Bluetooth A2DP source, the Hands Free Profile (HFP).
+#         actions:
+#            - text: Learn More
+#              url: /docs/en/markdown-enhancements
+    - title: Play music to destinations
+      children:
+        - title: Local speaker
+          excerpt: 2 x 4-ohm and 3-watt speaker.
+#          actions:
+#            - text: Learn More
+#              url: /docs/en/additional-styles
+        - title: Line-out
+          excerpt: It allows external speakers, headphones, or other output devices to connect to Hikiku.
+#         actions:
+#            - text: Learn More
+#              url: /docs/en/extensions
+        - title: BT 
+          excerpt: The Classic Bluetooth A2DP sink, the Hands Free Profile (HFP).
+#         actions:
+#            - text: Learn More
+#              url: /docs/en/markdown-enhancements
+      theme: dark
+      background_color: "#515151"
+    - title: Applications
+      excerpt: It's used in network background music playback, Internet radio, local music bridging, etc.
+      actions:
+        - text: Learn More
+          url: /en/applications.html
+    - title: Products
+      children:
+        - title: Hikiku
+          excerpt: A device that plays audio.
+          actions:
+            - text: Learn More
+              type: outline-theme-dark
+              url: /en/products.html#hikiku
+        - title: Hikiku App 
+          excerpt: Personalized adjustment via mobile phone.
+          actions:
+            - text: Learn More
+              type: outline-theme-dark
+              url: /en/products.html#hikiku-app
+        - title: Hikiku Board
+          excerpt: Manage all devices, apps and users.
+          actions:
+            - text: Learn More
+              type: outline-theme-dark
+              url: /en/products.html#hikiku-board
+      theme: dark
+      background_color: "#515151"
+    - title: Protocols
+      excerpt: An open communication protocol that is simple and easy to extend.
+      actions:
+        - text: Learn More
+          url: /en/protocols.html
 ---

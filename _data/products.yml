@@ -3,8 +3,8 @@ hikiku_system:
   shorname: Hikiku
 
 hikiku_widget:
-  fullname: Hikiku Widget
-  shortname: Widget
+  fullname: Hikiku
+  shortname: Hikiku
 
 hikiku_board:
   fullname: Hikiku Board

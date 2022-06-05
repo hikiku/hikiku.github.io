@@ -1,10 +1,101 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-# articles:
-#   excerpt_type: html
+layout: landing
+header: true
+show_date: false
 lang: zh-Hans  #en, zh-Hans, zh-Hant
-permalink: /zh-Hans/index.html
+
+title: Hikiku 海酷
+excerpt: >
+  一个开放创新的互联网音频播放装置。
+permalink: /zh-Hans/
+redirect_from:
+  - /zh-Hans/index.html
+
+article_header:
+  actions:
+    - text: 了解更多>
+      type: error
+      url: /zh-Hans/applications
+  height: 80vh
+  theme: dark
+  background_color: "#367a9a"
+  background_image:
+    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
+#    src: /docs/assets/images/cover4.jpg
+
+data:
+  sections:
+    - title: 音频源
+      children:
+        - title: MicroSD card
+          excerpt: 支持 MP3, OPUS, OGG, FLAC, AAC, M4A, TS, MP4, AMRNB 和 AMRWB 等音频编码格式
+#          actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/additional-styles
+        - title: HTTP 文件 与 HLS
+          excerpt: 来自 HTTP Server 的文件和 HLS 流 （HTTP Live Streaming）
+#         actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/extensions
+        - title: Line-in
+          excerpt: 可以连接 CD 播放器，混音器，乐器等外部音频装置
+#         actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/extensions
+        - title: BT
+          excerpt: 包括 Classic Bluetooth A2DP source, Hands Free Profile (HFP)
+#         actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/markdown-enhancements
+    - title: 音频输出
+      children:
+        - title: 本地喇叭
+          excerpt: 2 个 4-ohm, 3-watt speaker.
+#          actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/additional-styles
+        - title: Line-out
+          excerpt: 可以连接外部功放，耳机，或者其它音频输出装置
+#         actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/extensions
+        - title: BT 
+          excerpt: 包括 Classic Bluetooth A2DP sink, the Hands Free Profile (HFP)
+#         actions:
+#            - text: 了解更多>
+#              url: /docs/zh-Hans/markdown-enhancements
+      theme: dark
+      background_color: "#515151"
+    - title: 应用
+      excerpt: 用于网络背景音乐播放、网络广播、本地音乐桥接等。
+      actions:
+        - text: 了解更多>
+          url: /zh-Hans/applications.html
+    - title: 产品
+      children:
+        - title: Hikiku
+          excerpt: 开放的互联网音频播放装置
+          actions:
+            - text: 了解更多>
+              type: outline-theme-dark
+              url: /zh-Hans/products.html#hikiku
+        - title: Hikiku App 
+          excerpt: 经智能手机个性化调节
+          actions:
+            - text: 了解更多>
+              type: outline-theme-dark
+              url: /zh-Hans/products.html#hikiku-app
+        - title: Hikiku Board
+          excerpt: 管理所有装置与用户
+          actions:
+            - text: 了解更多>
+              type: outline-theme-dark
+              url: /zh-Hans/products.html#hikiku-board
+      theme: dark
+      background_color: "#515151"
+    - title: 协议
+      excerpt: 开放的通信协议，简洁且易于扩展。
+      actions:
+        - text: 了解更多>
+          url: /zh-Hans/protocols.html
 ---
