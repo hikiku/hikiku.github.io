@@ -1,54 +1,56 @@
+headerbrand:
+  titles:
+      # @start locale config
+      en      : &EN       Hikiku
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  Hikiku 海酷
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  Hikiku 海酷
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       Hikiku
+      ko-KR   : *KO
+      fr      : &FR       Hikiku
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       Hikiku
+      # @end locale config
+  url: /{lang}/
+
 header:
   - titles:
       # @start locale config
-      en      : &EN       Applications
+      en      : &EN       Home
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  应用
+      zh-Hans : &ZH_HANS  首页
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  應用
+      zh-Hant : &ZH_HANT  首頁
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       애플리케이션
+      ko      : &KO       집
       ko-KR   : *KO
-      fr      : &FR       Applications
+      fr      : &FR       Maison
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
       fr-FR   : *FR
       fr-LU   : *FR
-      tr      : &TR       Uygulamalar
+      tr      : &TR       Ev
       # @end locale config
-    url: /xxxen.html
-  - titles:
-      # @start locale config
-      en      : &EN       Applications
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  应用
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  應用
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       애플리케이션
-      ko-KR   : *KO
-      fr      : &FR       Applications
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Uygulamalar
-      # @end locale config
-    url: /xxxzh.html
+    url: /{lang}/
 
   - titles:
       # @start locale config
@@ -74,7 +76,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Uygulamalar
       # @end locale config
-    url: /applications.html
+    url: /{lang}/applications.html
 
   - titles:
       # @start locale config
@@ -100,7 +102,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Ürün
       # @end locale config
-    url: /products.html
+    url: /{lang}/products.html
   
   - titles:
       # @start locale config
@@ -126,7 +128,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       protokoller
       # @end locale config
-    url: /protocols.html
+    url: /{lang}/protocols.html
 
   - titles:
       # @start locale config
@@ -152,7 +154,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Arşivdekiler
       # @end locale config
-    url: /archive.html
+    url: /{lang}/archive.html
 
   - titles:
       # @start locale config
@@ -178,4 +180,87 @@ header:
       fr-LU   : *FR
       tr      : &TR       Hakkında
       # @end locale config
-    url: /about.html
+    url: /{lang}/about.html
+
+headerlang:
+  - titles:
+      # @start locale config
+      en      : &EN       EN
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  EN
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  EN
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       EN
+      ko-KR   : *KO
+      fr      : &FR       EN
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       EN
+      # @end locale config
+    url: /en/index.html
+    lang: en
+
+  - titles:
+      # @start locale config
+      en      : &EN       简
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  简
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  简
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       简
+      ko-KR   : *KO
+      fr      : &FR       简
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       简
+      # @end locale config
+    url: /zh-Hans/index.html
+    lang: zh-Hans
+
+headerlangundo:
+  - titles:
+      # @start locale config
+      en      : &EN       繁
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  繁
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  繁
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       繁
+      ko-KR   : *KO
+      fr      : &FR       繁
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      tr      : &TR       繁
+      # @end locale config
+    url: /zh-Hant/index.html
+    lang: zh-Hant

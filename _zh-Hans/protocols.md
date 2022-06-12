@@ -25,6 +25,7 @@ titles:
 lang: zh-Hans  #en, zh-Hans, zh-Hant
 key: page-zh-Hans-protocols
 permalink: /zh-Hans/protocols.html
+show_date: false
 ---
 
 - /protocols.md

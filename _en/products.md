@@ -25,6 +25,7 @@ titles:
 lang: en  #en, zh-Hans, zh-Hant
 key: page-en-products
 permalink: /en/products.html
+show_date: false
 ---
 
 
@@ -34,7 +35,7 @@ permalink: /en/products.html
 
 {% assign hikiku_board     = site.data.products["hikiku_board"] %}
 
-{% assign hikiku_http_sink   = site.data.products["hikiku_http_sink"] %}
+{% assign hikiku_http_source   = site.data.products["hikiku_http_source"] %}
 
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
 
@@ -51,7 +52,7 @@ permalink: /en/products.html
 - 支持多种主流音频格式，包括 MP3、AAC、FLAC、WAV、OGG、OPUS、AMR、TS、ALC 和 G.711
 
 
-## {{ hikiku_http_sink.fullname }}
+## {{ hikiku_http_source.fullname }}
 
 采用标准的 HTTP Server，例如：
 

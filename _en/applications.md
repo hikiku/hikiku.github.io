@@ -25,6 +25,7 @@ titles:
 lang: en  #en, zh-Hans, zh-Hant
 key: page-en-applications
 permalink: /en/applications.html
+show_date: false
 ---
 
 Applictions.

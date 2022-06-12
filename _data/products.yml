@@ -10,9 +10,9 @@ hikiku_board:
   fullname: Hikiku Board
   shortname: Board
 
-hikiku_http_sink:
-  fullname: Hikiku HTTP Sink
-  shortname: HTTP Sink
+hikiku_http_source:
+  fullname: Hikiku HTTP Source
+  shortname: HTTP Source
 
 hikiku_app:
   fullname: Hikiku App

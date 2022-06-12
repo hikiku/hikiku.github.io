@@ -25,6 +25,7 @@ titles:
 lang: zh-Hans  #en, zh-Hans, zh-Hant
 key: page-zh-Hans-products
 permalink: /zh-Hans/products.html
+show_date: false
 ---
 
 
@@ -34,14 +35,14 @@ permalink: /zh-Hans/products.html
 
 {% assign hikiku_board     = site.data.products["hikiku_board"] %}
 
-{% assign hikiku_http_sink   = site.data.products["hikiku_http_sink"] %}
+{% assign hikiku_http_source   = site.data.products["hikiku_http_source"] %}
 
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
 
 
 ## {{ hikiku_widget.fullname }}
 
-音频播放小设备：
+音频播放装置：
 
 - 尺寸：40 mm x 50 mm
 - 电源：5V, USB 电源端口 (USB Power Port)
@@ -51,7 +52,7 @@ permalink: /zh-Hans/products.html
 - 支持多种主流音频格式，包括 MP3、AAC、FLAC、WAV、OGG、OPUS、AMR、TS、ALC 和 G.711
 
 
-## {{ hikiku_http_sink.fullname }}
+## {{ hikiku_http_source.fullname }}
 
 采用标准的 HTTP Server，例如：
 
