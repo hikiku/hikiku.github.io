@@ -22,10 +22,7 @@ show_title: false #true, false
 show_date: false
 ---
 
-
-
 请订阅我们的 RSS 频道，及时了解我们的进展。
-
 
 Just say something about yourself. :+1:
 

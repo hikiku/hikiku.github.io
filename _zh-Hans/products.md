@@ -26,6 +26,9 @@ lang: zh-Hans  #en, zh-Hans, zh-Hant
 key: page-zh-Hans-products
 permalink: /zh-Hans/products.html
 show_date: false
+show_title: false
+aside:
+    toc: true
 ---
 
 
@@ -47,20 +50,20 @@ show_date: false
 - 尺寸：40 mm x 50 mm
 - 电源：5V, USB 电源端口 (USB Power Port)
 - Wi-Fi 连接
+- BT 连接
 - MicroSD 插槽 (MicroSD Slot)
-- 音频输出接口： BT, Line Out, Local Speaker
+- 音频输出接口： BT, Line In/Out, Local Speaker
 - 支持多种主流音频格式，包括 MP3、AAC、FLAC、WAV、OGG、OPUS、AMR、TS、ALC 和 G.711
 
 
 ## {{ hikiku_http_source.fullname }}
 
-采用标准的 HTTP Server，例如：
+HTTP/HLS 网络音频源，使用通用的 HTTP Server，例如：
 
 - PWS
 - IIS
 - Apache
 - NGINX
-- ......
 
 提供播放列表生成工具：
 
@@ -69,14 +72,16 @@ show_date: false
 
 ## {{ hikiku_app.fullname }}
 
-主要用于配置 {{ hikiku_board.fullname }}：
+音频装置调节手机应用，主要用于配置 {{ hikiku_widget.fullname }}：
 
 - 设置 Wi-Fi 参数
 - 设置 Server URL, Token 
-- 设置音频输出接口
+- 设置音频输入、输出参数
 
 
 ## {{ hikiku_board.fullname }}
+
+IoT 平台软件：
 
 - 设备管理 {{ hikiku_widget.fullname }}
 - 用户管理 {{ hikiku_app.fullname }}
