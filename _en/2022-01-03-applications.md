@@ -27,6 +27,7 @@ key: page-en-applications
 permalink: /en/applications.html
 show_date: false
 show_title: false
+article_section_navigator: false
 aside:
     toc: true
 ---

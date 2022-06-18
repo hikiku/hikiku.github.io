@@ -94,3 +94,9 @@ Jekyll 集成了一个开发用的服务器，可以让你使用浏览器在本�
 如果你打算把网站搭建在 GitHub Pages 上，那你所需要做的就是将项目的源码上传到 USERNAME.github.io 源码仓库的 master 分支，GitHub 会自动的编译，几分钟后你就可以通过 **https://USERNAME.github.io** 访问到你的网站了。
 
 如果你的网站是搭建在其他服务器上的，那么你就需要来自己编译了。首先运行命令 `JEKYLL_ENV=production bundle exec jekyll build` 编译你的网站，然后将编译的文件（位于 *_site* 目录）更新到你的服务器上。
+
+
+## TODO
+
+* 页面顶端的标题会左右移动。最好能固定位置。
+* 英文页面内容。

@@ -22,13 +22,14 @@ titles:
     fr-FR   : *FR
     fr-LU   : *FR
     tr      : &TR       protokoller
-lang: en  #en, zh-Hans, zh-Hant
-key: page-en-protocols
-permalink: /en/protocols.html
+lang: zh-Hans  #en, zh-Hans, zh-Hant
+key: page-zh-Hans-protocols
+permalink: /zh-Hans/protocols.html
 show_date: false
 show_title: false
+article_section_navigator: false
 aside:
-    toc: true
+    toc: false
 ---
 
 {% assign hikiku_system    = site.data.products["hikiku_system"] %}
