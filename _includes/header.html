@@ -6,6 +6,8 @@
   <header class="header" {%- if include.background -%} style="background: {{ include.background }};" {%- endif -%}>
 {%- endif -%}
     <div class="main">
+
+      <!-- logo brand -->
       <div class="header__title">
         <div class="header__brand">
           <!-- 20220605
@@ -45,11 +47,14 @@
           <!-- 20220605 -->
 
         </div>
+        <!-- 20220605
         {%- if site.search.provider -%}
           <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
         {%- endif -%}
+        -->
       </div>
 
+      <!-- navigation -->
       {%- if site.data.navigation.header -%}
       <nav class="navigation">
         <ul>
@@ -78,11 +83,13 @@
       {%- if site.search.provider or site.data.navigation.headerlang -%}
       <nav class="navigation">
         <ul>
+          <!-- search -->
           {%- if site.search.provider -%}
             <li></li>
             <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
           {%- endif -%}
 
+          <!-- language -->
           {%- if site.data.navigation.headerlang -%}
             {%- for _item in site.data.navigation.headerlang -%}
               {%- include snippets/get-lang.html -%}

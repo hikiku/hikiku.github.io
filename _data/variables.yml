@@ -39,6 +39,7 @@ default:
     pageview: false
     search: default
 
+
 sources:
   bootcdn:
     font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css'
