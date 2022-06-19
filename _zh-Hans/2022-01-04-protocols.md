@@ -51,9 +51,9 @@ graph TB
     C(("互联网"))
     D[{{ hikiku_widget.fullname }}]
     G[{{ hikiku_app.fullname }}]
-    A==HTTP/HLS==>C
+    A==HTTP, HLS==>C
     B--MQTT---C
-    C==HTTP/HLS==>D
+    C==HTTP, HLS==>D
     C--MQTT---D
     C--HTTP, WebSocket-->G
     G--SmartConfig-->D
@@ -61,5 +61,5 @@ graph TB
 
 - HTTP/HLS: 标准的 HTTP 或 HTTP Living Stream 码流。下载音乐，下载 PlayList。
 - MQTT: 对 {{ hikiku_widget.fullname }} 的控制指令。
-- HTTP, WebSocket：{{ hikiku_app.fullname }} 发出的控制指令。 例如： 设置音频输入、输出接口。
-- SmartConfig：{{ hikiku_app.fullname }}发出的 Wi-Fi 配网指令。 Wi-Fi 配对， 设置 Server URL, Token。
+- HTTP, WebSocket：{{ hikiku_app.fullname }} 发出的控制指令。例如：设置音频输入、输出接口。
+- SmartConfig：{{ hikiku_app.fullname }}发出的 Wi-Fi 配网指令。 例如：Wi-Fi 配对，设置 Server URL，Token。

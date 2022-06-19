@@ -42,15 +42,15 @@ aside:
 
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
 
-## 网络背景音乐
+## Network Background Music
 
-### 系统示意图
+### Overview
 
 ```mermaid
 graph TB;
     A[{{ hikiku_http_source.fullname }}]
     B[{{ hikiku_board.fullname }}]
-    C(("互联网"))
+    C(("Internet"))
     D[{{ hikiku_widget.fullname }}]
     E[{{ hikiku_widget.fullname }}]
     F[{{ hikiku_widget.fullname }}]
@@ -63,17 +63,17 @@ graph TB;
     C---G;
 ```
 
-* {{ hikiku_http_source.fullname }}：HTTP/HLS 网络音频源
-* {{ hikiku_board.fullname }}：IoT 平台软件
-* {{ hikiku_widget.fullname }}：音频播放装置
-* {{ hikiku_app.fullname }}：音频装置调节手机应用
+* **{{ hikiku_http_source.fullname }}**：A HTTP/HLS music source
+* **{{ hikiku_board.fullname }}**：An IoT platform
+* **{{ hikiku_widget.fullname }}**：An audio playback device
+* **{{ hikiku_app.fullname }}**：A mobile app for adjusting the audio device 
 
-### 音频流
+### Audio streams
 
 ```mermaid
 graph TB;
     A[{{ hikiku_http_source.fullname }}]
-    C(("互联网"))
+    C(("Internet"))
     D[{{ hikiku_widget.fullname }}]
     E[{{ hikiku_widget.fullname }}]
     F[{{ hikiku_widget.fullname }}]
@@ -83,14 +83,14 @@ graph TB;
     C-->F;
 ```
 
-音频流自 {{ hikiku_http_source.fullname }} 经互联网，传送至 {{ hikiku_widget.fullname }}。
+Audio is streamed from the **{{ hikiku_http_source.fullname }}** to **{{ hikiku_widget.fullname }}** via the Internet.
 
-### 控制指令
+### Control signal
 
 ```mermaid
 graph TB;
     B[{{ hikiku_board.fullname }}]
-    C(("互联网"))
+    C(("Internet"))
     D[{{ hikiku_widget.fullname }}]
     E[{{ hikiku_widget.fullname }}]
     F[{{ hikiku_widget.fullname }}]
@@ -102,4 +102,4 @@ graph TB;
     C---G;
 ```
 
-控制信号自 {{ hikiku_app.fullname }} 经 {{ hikiku_board.fullname }} 中转 ，传送至 {{ hikiku_widget.fullname }}， 或者反之。
+Control signals are relayed from **{{ hikiku_app.fullname }}** via **{{ hikiku_board.fullname }}** to **{{ hikiku_widget.fullname }}**, or vice versa.

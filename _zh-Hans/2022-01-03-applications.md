@@ -63,10 +63,10 @@ graph TB;
     C---G;
 ```
 
-* {{ hikiku_http_source.fullname }}：HTTP/HLS 网络音频源
-* {{ hikiku_board.fullname }}：IoT 平台软件
-* {{ hikiku_widget.fullname }}：音频播放装置
-* {{ hikiku_app.fullname }}：音频装置调节手机应用
+* **{{ hikiku_http_source.fullname }}**：HTTP/HLS 网络音频源
+* **{{ hikiku_board.fullname }}**：IoT 平台软件
+* **{{ hikiku_widget.fullname }}**：音频播放装置
+* **{{ hikiku_app.fullname }}**：音频装置调节手机应用
 
 ### 音频流
 
@@ -83,7 +83,7 @@ graph TB;
     C-->F;
 ```
 
-音频流自 {{ hikiku_http_source.fullname }} 经互联网，传送至 {{ hikiku_widget.fullname }}。
+音频流自 **{{ hikiku_http_source.fullname }}** 经互联网，传送至 **{{ hikiku_widget.fullname }}**。
 
 ### 控制指令
 
@@ -102,4 +102,4 @@ graph TB;
     C---G;
 ```
 
-控制信号自 {{ hikiku_app.fullname }} 经 {{ hikiku_board.fullname }} 中转 ，传送至 {{ hikiku_widget.fullname }}， 或者反之。
+控制信号自 **{{ hikiku_app.fullname }}** 经 **{{ hikiku_board.fullname }}** 中转 ，传送至 **{{ hikiku_widget.fullname }}**， 或者反之。

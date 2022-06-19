@@ -42,24 +42,24 @@ aside:
 
 {% assign hikiku_app       = site.data.products["hikiku_app"] %}
 
-## 通信协议
+## Protocols
 
 ```mermaid
 graph TB
     A[{{ hikiku_http_source.fullname }}]
     B[{{ hikiku_board.fullname }}]
-    C(("互联网"))
+    C(("Internet"))
     D[{{ hikiku_widget.fullname }}]
     G[{{ hikiku_app.fullname }}]
-    A==HTTP/HLS==>C
+    A==HTTP, HLS==>C
     B--MQTT---C
-    C==HTTP/HLS==>D
+    C==HTTP, HLS==>D
     C--MQTT---D
     C--HTTP, WebSocket-->G
     G--SmartConfig-->D
 ```
 
-- HTTP/HLS: 标准的 HTTP 或 HTTP Living Stream 码流。下载音乐，下载 PlayList。
-- MQTT: 对 {{ hikiku_widget.fullname }} 的控制指令。
-- HTTP, WebSocket：{{ hikiku_app.fullname }} 发出的控制指令。 例如： 设置音频输入、输出接口。
-- SmartConfig：{{ hikiku_app.fullname }}发出的 Wi-Fi 配网指令。 Wi-Fi 配对， 设置 Server URL, Token。
+- HTTP/HLS: HTTP or HLS audio stream.
+- MQTT: Control signal about {{ hikiku_widget.fullname }}.
+- HTTP, WebSocket：Control commands issued by {{ hikiku_app.fullname }}, e.g., set the audio input and output interface.
+- SmartConfig：Wi-Fi configuration command issued by {{ hikiku_app.fullname }}, e.g., Wi-Fi pairing, set Server URL, Token.
