@@ -52,7 +52,7 @@ zh-Hans: &ZH_HANS
   EMAIL_ME                : "给我发邮件。"
   EMAIL_US                : "给我们发邮件。"
   COPYRIGHT_DATES         : "2022"
-  COPYRIGHT_RESERVED      : "版权所有"
+  COPYRIGHT_RESERVED      : "保留所有权利"
 
 zh:
   <<: *ZH_HANS
@@ -82,7 +82,7 @@ zh-Hant: &ZH_HANT
   EMAIL_ME                : "給我發郵件。"
   EMAIL_US                : "給我們發郵件。"
   COPYRIGHT_DATES         : "2022"
-  COPYRIGHT_RESERVED      : "版權所有"
+  COPYRIGHT_RESERVED      : "保留所有權利"
 
 zh-TW:
   <<: *ZH_HANT
